@@ -24,7 +24,11 @@ console.log(final2014['Home Team Name']);
 console.log(final2014['Away Team Name']);
 console.log(final2014['Home Team Goals']);
 console.log(final2014['Away Team Goals']);
-console.log(final2014['Win conditions']);
+console.log(
+  final2014['Home Team Goals'] > final2014['Away Team Goals']
+    ? final2014['Home Team Name']
+    : final2014['Away Team Name']
+);
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
 console.log(
